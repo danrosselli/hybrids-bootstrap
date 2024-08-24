@@ -5,12 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from "./views/Home.js";
 import Features from "./views/Features.js";
+import Async from "./views/Async.js";
 import About from "./views/About.js";
 import Help from "./views/Help.js";
 
 define({
   tag: "my-app",
-  views: router([Home, Features, Help, About]),
+  views: router([Home, Features, Async, Help, About]),
   render: ({ views }) => {
 
     return html`
@@ -30,6 +31,7 @@ define({
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item"><a href="${router.url(Home, { name: 'Lion'})}" class="nav-link active" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="${router.url(Features, { name: 'Hybrid has many features!'})}" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="${router.url(Async, { name: 'Hybrid has many features!'})}" class="nav-link">Async</a></li>
                 <li class="nav-item"><a href="${router.url(Help, { user: "Daniel" })}" class="nav-link">Help</a></li>
                 <li class="nav-item"><a href="${router.url(About, { hint: 'Hybrid is nice!'})}" class="nav-link">About</a></li>
               </ul>
@@ -39,7 +41,6 @@ define({
       </nav>
       </div>
       ${views}
-    
     `;
 
   }
