@@ -13,3 +13,13 @@
   border: 1px solid rgba(112.520718, 44.062154, 249.437846, .3);
 }
 
+.navbar-toggler {
+  border: none !important;
+  font-size: medium !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+

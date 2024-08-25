@@ -16,7 +16,7 @@ export const Async = define({
   tag: "async-view",
   character: () => getStarWarsPeople(),
   render: ({ character }) => {
-    console.log(character);
+    
     return html`
     <!-- Browser elements -->
     <div class="container">
