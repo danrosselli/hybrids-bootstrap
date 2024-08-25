@@ -8,7 +8,7 @@ import Features from "./views/Features.js";
 import Async from "./views/Async.js";
 import Form from "./views/Form.js";
 import About from "./views/About.js";
-import Help from "./views/Help.js";
+import Router from "./views/Router.js";
 import Grid from "./views/Grid.js";
 
 const styles = {
@@ -20,7 +20,7 @@ const styles = {
 
 define({
   tag: "my-app",
-  views: router([Home, Features, Async, Form, Grid, Help, About]),
+  views: router([Home, Features, Async, Form, Grid, Router, About]),
   render: ({ views }) => {
 
     return html`
@@ -54,7 +54,7 @@ define({
                     <a href="${router.url(Grid)}" class="nav-link">Grid</a>
                   </li>
                   <li class="nav-item" data-bs-dismiss="offcanvas">
-                    <a href="${router.url(Help, { user: "Daniel" })}" class="nav-link">Help</a>
+                    <a href="${router.url(Router, { user: "Daniel" })}" class="nav-link">Router</a>
                   </li>
                   <li class="nav-item" data-bs-dismiss="offcanvas">
                     <a href="${router.url(About, { hint: 'Hybrid is nice!'})}" class="nav-link">About</a>

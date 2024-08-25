@@ -32,7 +32,7 @@ export const Async = define({
         ${html.resolve(
           character
             .then(
-              (obj) => html`Name received from API: ${obj.name} `
+              (obj) => html`Name received from API: "${obj.name}" `
             )
             .catch(() => html` Not found `),
           html` Loading data... `
