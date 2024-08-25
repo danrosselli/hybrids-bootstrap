@@ -10,7 +10,7 @@ export default define({
         <img class="d-block mx-auto mb-4" src="${hybridsSvg}" alt="" width="72" height="57">
         <h2>About</h2>
         <p class="lead">
-          Hybrid JavaScript Framework created by Daniel Rosselli
+          Hybrid Boilerplate created by Daniel Rosselli
         </p>
       </div>
       <div class="py-5 text-center">
