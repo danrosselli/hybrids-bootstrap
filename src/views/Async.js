@@ -1,4 +1,5 @@
 import { define, html, router } from 'hybrids';
+import bootstrapSvg from '../assets/bootstrap-logo.svg';
 
 // Function to make an asynchronous request and return the data
 async function getStarWarsPeople() {
@@ -20,10 +21,14 @@ export const Async = define({
     return html`
     <!-- Browser elements -->
     <div class="container">
-      <h1>Async</h1>
-      <p>This is an example of how to make asynchronous calls to an API and have it rendered after it finishes. Its simple and efficient approach shows that Hybrids is a framework with a bright future!</p>
-      <p>Whenever an asynchronous call is used, html.resolve must be used to wait for the operation to finish and display the result.</p>
-      <div>
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="${bootstrapSvg}" alt="" width="72" height="57">
+        <h2>Async</h2>
+        <p class="lead">This is an example of how to make asynchronous calls to an API and have it rendered after it finishes. Its simple and efficient approach shows that Hybrids is a framework with a bright future!
+        Whenever an asynchronous call is used, html.resolve must be used to wait for the operation to finish and display the result.
+        </p>
+      </div>
+      <div class="py-5 text-center">
         ${html.resolve(
           character
             .then(

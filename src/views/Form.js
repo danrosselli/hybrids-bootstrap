@@ -1,5 +1,4 @@
 import { define, html } from 'hybrids';
-
 import bootstrapSvg from '../assets/bootstrap-logo.svg';
 
 function onSubmit(host, event) {

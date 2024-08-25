@@ -23,3 +23,8 @@
   outline: none !important;
 }
 
+.no-resize {
+  overflow:auto;
+  resize:none;
+}
+
